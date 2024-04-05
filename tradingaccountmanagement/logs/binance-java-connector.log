@@ -1,0 +1,1182 @@
+2024-04-01 20:49:01.523[1712022541523] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 20273 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 20:49:01.525[1712022541525] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 20:49:02.080[1712022542080] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 20:49:02.086[1712022542086] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 20:49:02.088[1712022542088] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 20:49:02.089[1712022542089] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 20:49:02.118[1712022542118] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 20:49:02.119[1712022542119] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 570 ms
+2024-04-01 20:49:02.336[1712022542336] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 20:49:02.348[1712022542348] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 20:49:02.354[1712022542354] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 1.033 seconds (process running for 1.356)
+2024-04-01 20:49:08.883[1712022548883] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 20:49:08.884[1712022548884] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 20:49:08.884[1712022548884] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 0 ms
+2024-04-01 20:49:08.908[1712022548908] | ERROR | http-nio-8080-exec-1 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List] with root cause
+java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 20:49:36.836[1712022576836] | ERROR | http-nio-8080-exec-4 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List] with root cause
+java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 20:51:29.755[1712022689755] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 20588 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 20:51:29.757[1712022689757] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 20:51:30.262[1712022690262] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 20:51:30.269[1712022690269] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 20:51:30.270[1712022690270] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 20:51:30.270[1712022690270] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 20:51:30.296[1712022690296] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 20:51:30.297[1712022690297] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 517 ms
+2024-04-01 20:51:30.511[1712022690511] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 20:51:30.520[1712022690520] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 20:51:30.525[1712022690525] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 0.952 seconds (process running for 1.219)
+2024-04-01 20:51:39.016[1712022699016] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 20:51:39.016[1712022699016] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 20:51:39.017[1712022699017] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2024-04-01 20:51:51.557[1712022711557] | ERROR | http-nio-8080-exec-2 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List] with root cause
+java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 20:55:17.801[1712022917801] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 20841 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 20:55:17.802[1712022917802] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 20:55:18.318[1712022918318] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 20:55:18.325[1712022918325] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 20:55:18.326[1712022918326] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 20:55:18.326[1712022918326] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 20:55:18.354[1712022918354] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 20:55:18.355[1712022918355] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 528 ms
+2024-04-01 20:55:18.566[1712022918566] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 20:55:18.575[1712022918575] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 20:55:18.580[1712022918580] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 0.966 seconds (process running for 1.251)
+2024-04-01 20:55:27.165[1712022927165] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 20:55:27.165[1712022927165] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 20:55:27.166[1712022927166] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2024-04-01 20:55:27.195[1712022927195] | ERROR | http-nio-8080-exec-1 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List] with root cause
+java.lang.IllegalStateException: No primary or single unique constructor found for interface java.util.List
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 21:04:00.404[1712023440404] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 21222 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 21:04:00.405[1712023440405] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 21:04:00.914[1712023440914] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 21:04:00.921[1712023440921] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:04:00.922[1712023440922] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 21:04:00.922[1712023440922] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 21:04:00.953[1712023440953] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 21:04:00.954[1712023440954] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 527 ms
+2024-04-01 21:04:01.179[1712023441179] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:04:01.188[1712023441188] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 21:04:01.194[1712023441194] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 0.98 seconds (process running for 1.263)
+2024-04-01 21:04:13.282[1712023453282] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 21:04:13.282[1712023453282] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 21:04:13.283[1712023453283] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2024-04-01 21:04:56.117[1712023496117] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 21436 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 21:04:56.119[1712023496119] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 21:04:56.649[1712023496649] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 21:04:56.656[1712023496656] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:04:56.657[1712023496657] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 21:04:56.658[1712023496658] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 21:04:56.686[1712023496686] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 21:04:56.687[1712023496687] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 545 ms
+2024-04-01 21:04:56.903[1712023496903] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:04:56.912[1712023496912] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 21:04:56.918[1712023496918] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 0.983 seconds (process running for 1.255)
+2024-04-01 21:05:03.514[1712023503514] | INFO  | http-nio-8080-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 21:05:03.514[1712023503514] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 21:05:03.515[1712023503515] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2024-04-01 21:05:03.549[1712023503549] | INFO  | http-nio-8080-exec-2 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/dapi/v1/allOrders?pair=BTCUSD&timestamp=1712023503533&signature=8f02d90d9b2b6a927450bc55b086d985d3a2858c19a2ac94d72fc9ea4e6f2731
+2024-04-01 21:05:06.270[1712023506270] | ERROR | http-nio-8080-exec-2 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+] with root cause
+com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleErrorResponse(ResponseHandler.java:73)
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleResponse(ResponseHandler.java:35)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendApiRequest(RequestHandler.java:56)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendSignedRequest(RequestHandler.java:80)
+	at com.binance.connector.futures.client.impl.futures.Account.allOrders(Account.java:55)
+	at com.binance.connector.futures.client.impl.cm_futures.CMAccount.allOrders(CMAccount.java:118)
+	at com.example.tradingaccountmanagementApplication.TradeController.TradeController.sayName(TradeController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 21:09:29.774[1712023769774] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 21979 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 21:09:29.776[1712023769776] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 21:09:30.376[1712023770376] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 21:09:30.385[1712023770385] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:09:30.388[1712023770388] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 21:09:30.388[1712023770388] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 21:09:30.425[1712023770425] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 21:09:30.426[1712023770426] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 624 ms
+2024-04-01 21:09:30.670[1712023770670] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:09:30.684[1712023770684] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 21:09:30.691[1712023770691] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 1.113 seconds (process running for 1.44)
+2024-04-01 21:09:42.042[1712023782042] | INFO  | http-nio-8080-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 21:09:42.042[1712023782042] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 21:09:42.043[1712023782043] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2024-04-01 21:09:42.067[1712023782067] | INFO  | http-nio-8080-exec-2 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/dapi/v1/allOrders?pair=BTCUSD&timestamp=1712023782060&signature=76ec83eb95ecb6755bae9bb431f28d445a45e935175418eb902b3792abec2fda
+2024-04-01 21:09:43.384[1712023783384] | ERROR | http-nio-8080-exec-2 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+] with root cause
+com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleErrorResponse(ResponseHandler.java:73)
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleResponse(ResponseHandler.java:35)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendApiRequest(RequestHandler.java:56)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendSignedRequest(RequestHandler.java:80)
+	at com.binance.connector.futures.client.impl.futures.Account.allOrders(Account.java:55)
+	at com.binance.connector.futures.client.impl.cm_futures.CMAccount.allOrders(CMAccount.java:118)
+	at com.example.tradingaccountmanagementApplication.TradeController.TradeController.sayName(TradeController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 21:09:47.541[1712023787541] | INFO  | http-nio-8080-exec-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/dapi/v1/allOrders?pair=BTCUSD&timestamp=1712023787541&signature=7068040b43ab74b768cb2a9e2ee18e92ed96f91379c172a434340c749cb95fc7
+2024-04-01 21:09:47.861[1712023787861] | ERROR | http-nio-8080-exec-1 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+] with root cause
+com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleErrorResponse(ResponseHandler.java:73)
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleResponse(ResponseHandler.java:35)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendApiRequest(RequestHandler.java:56)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendSignedRequest(RequestHandler.java:80)
+	at com.binance.connector.futures.client.impl.futures.Account.allOrders(Account.java:55)
+	at com.binance.connector.futures.client.impl.cm_futures.CMAccount.allOrders(CMAccount.java:118)
+	at com.example.tradingaccountmanagementApplication.TradeController.TradeController.sayName(TradeController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 21:12:40.428[1712023960428] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 22302 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 21:12:40.430[1712023960430] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 21:12:41.009[1712023961009] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 21:12:41.017[1712023961017] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:12:41.019[1712023961019] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 21:12:41.019[1712023961019] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 21:12:41.048[1712023961048] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 21:12:41.049[1712023961049] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 594 ms
+2024-04-01 21:12:41.270[1712023961270] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:12:41.279[1712023961279] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 21:12:41.285[1712023961285] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 1.051 seconds (process running for 1.336)
+2024-04-01 21:12:50.534[1712023970534] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 21:12:50.534[1712023970534] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 21:12:50.535[1712023970535] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2024-04-01 21:12:50.557[1712023970557] | INFO  | http-nio-8080-exec-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/dapi/v1/allOrders?pair=BTCUSD&timestamp=1712023970552&signature=56ddf9665f716b7eed0b8bbf773284a45c8135387f23898eb5618f1dc1170b94
+2024-04-01 21:12:53.028[1712023973028] | ERROR | http-nio-8080-exec-1 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+] with root cause
+com.binance.connector.futures.client.exceptions.BinanceClientException: <!DOCTYPE html>
+<!-- saved from url=(0032)https://www.binance.com/en/error -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>Binance</title>
+  <link rel="Shortcut Icon" href="https://www.binance.com/en/favicon.ico">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .img {
+      width: 611px;
+      margin: 68px auto 0
+    }
+
+    .info {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .info p {
+      font-size: 14px;
+      font-family: Arial;
+      color: #333;
+      line-height: 18px;
+      margin: 0
+    }
+
+    .info button {
+      margin-top: 20px;
+      width: 231px;
+      height: 34px;
+      background: #FFFFFF;
+      border: 1px solid #F0B90B;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #F0B90B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"><img alt="" src="/errorPages/404.jpg"></div>
+  <div class="info">
+    <h3>出错啦！您访问的网页不存在。</h3>
+    <p>Sorry! The page you’re looking for cannot be found.</p>
+    <a href="https://www.binance.com">
+      <button>Return to Binance home page</button>
+    </a>
+  </div>
+
+</body>
+
+</html>
+
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleErrorResponse(ResponseHandler.java:73)
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleResponse(ResponseHandler.java:35)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendApiRequest(RequestHandler.java:56)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendSignedRequest(RequestHandler.java:80)
+	at com.binance.connector.futures.client.impl.futures.Account.allOrders(Account.java:55)
+	at com.binance.connector.futures.client.impl.cm_futures.CMAccount.allOrders(CMAccount.java:118)
+	at com.example.tradingaccountmanagementApplication.TradeController.TradeController.sayName(TradeController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-01 21:21:13.974[1712024473974] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Starting TradingAccountManagementApplication using Java 21.0.2 with PID 22845 (/home/andres/Downloads/tradingaccountmanagement/build/classes/java/main started by andres in /home/andres/Downloads/tradingaccountmanagement)
+2024-04-01 21:21:13.976[1712024473976] | INFO  | main       | c.e.t.TradingAccountManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 21:21:14.501[1712024474501] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8080 (http)
+2024-04-01 21:21:14.507[1712024474507] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:21:14.509[1712024474509] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2024-04-01 21:21:14.509[1712024474509] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-01 21:21:14.537[1712024474537] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2024-04-01 21:21:14.537[1712024474537] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 538 ms
+2024-04-01 21:21:14.743[1712024474743] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 21:21:14.752[1712024474752] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8080 (http) with context path ''
+2024-04-01 21:21:14.757[1712024474757] | INFO  | main       | c.e.t.TradingAccountManagementApplication - Started TradingAccountManagementApplication in 0.995 seconds (process running for 1.295)
+2024-04-01 21:21:37.706[1712024497706] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 21:21:37.706[1712024497706] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2024-04-01 21:21:37.707[1712024497707] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2024-04-01 21:21:37.734[1712024497734] | INFO  | http-nio-8080-exec-1 | c.b.c.f.client.utils.RequestHandler  - GET https://testnet.binancefuture.com/dapi/v1/allOrders?pair=BTCUSD&timestamp=1712024497728&signature=fae11919b3ab2edefb3ad36f6ba96b04ec42ed8ad58006cb7d091fc8c7432710
+2024-04-01 21:21:39.469[1712024499469] | ERROR | http-nio-8080-exec-1 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.binance.connector.futures.client.exceptions.BinanceClientException: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 130.176.191.171"}] with root cause
+com.binance.connector.futures.client.exceptions.BinanceClientException: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 130.176.191.171"}
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleErrorResponse(ResponseHandler.java:71)
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleResponse(ResponseHandler.java:35)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendApiRequest(RequestHandler.java:56)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendSignedRequest(RequestHandler.java:80)
+	at com.binance.connector.futures.client.impl.futures.Account.allOrders(Account.java:55)
+	at com.binance.connector.futures.client.impl.cm_futures.CMAccount.allOrders(CMAccount.java:118)
+	at com.example.tradingaccountmanagementApplication.TradeController.TradeController.sayName(TradeController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
